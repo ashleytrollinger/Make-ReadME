@@ -1,4 +1,4 @@
-# 
+# Example Title
 ## Table of Contents 
 1. [Description](#description) 
 2. [Install Instructions] (#instalation-instructions) 
@@ -8,18 +8,18 @@
 6. [License](#license) 
 7. [Questions](#questions) 
 ## Description 
- 
+ Descriptioin of the project goes here
 ## Installation Instructions 
-
+Instructions go here
 ## Usage Information 
-
+blah blah blah
 ## Contribution Guidelines 
-
+here goes the contribution guidelines
 ## Test Instructions 
-
+test instructions
 ## License 
 MIT
 ## Questions 
-Github: 
-Email: 
+Github: ashleyTrollinger
+Email: ashleyy@trollingeres.com
 

@@ -52,8 +52,6 @@ inquirer.prompt([
     },
 ]).then((data) => {
     console.table(data)
-    //Creating a variables for all the data to then create a README string to append to the file
-    var title = ("# " + data.title + "\n\r")
     // Setting up the table of conents
     var toc = "## Table of Contents \n\r"
     var tocDescription = "1. [Description](#description) \n\r"
@@ -64,8 +62,9 @@ inquirer.prompt([
     var tocLicense = "6. [License](#license) \n\r"
     var tocQuestions = "7. [Questions](#questions) \n\r"
     var tableOfContents = (tocDescription + tocInstall + tocUsage + tocContribution + tocTest + tocLicense + tocQuestions)
-
-
+    
+    //Creating a variables for all the data to then create a README string to append to the file
+    var title = ("# " + data.title + "\n\r")
     var descriptionTitle = "## Description \n\r "
     var description = (data.description + "\n\r")
     var installTitle = "## Installation Instructions \n\r"
@@ -84,7 +83,7 @@ inquirer.prompt([
 
     //Creating the string of the README 
     var readMe = (title + toc + tableOfContents + descriptionTitle + description + installTitle + install + usageTitle + usage + contributionTitle + contribution + testTitle + test + licenseTitle + license + questionsTitle + username + email)
-
+    // Writing the readme file or writing overtop of the existing one to fit the users input
     fs.writeFile('README.md', readMe, (err) => {
         if (err)
             console.log(err);
